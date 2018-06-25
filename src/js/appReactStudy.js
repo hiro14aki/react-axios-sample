@@ -135,9 +135,14 @@ class Game extends React.Component {
 
     return (
       <div>
-        <div className="maintenance">
-          <div>{this.state.maintenanceMessage}</div>
-        </div>
+        { this.state.maintenanceMessage !== '' ?
+          (
+            <div className="maintenance">
+              <div>{this.state.maintenanceMessage}</div>
+            </div>
+          )
+          : null
+        }
         <div className="game">
           <div className="game-board">
             <Board
