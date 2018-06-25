@@ -135,7 +135,7 @@ class Game extends React.Component {
 
     return (
       <div>
-        <div>
+        <div className="maintenance">
           <div>{this.state.maintenanceMessage}</div>
         </div>
         <div className="game">
